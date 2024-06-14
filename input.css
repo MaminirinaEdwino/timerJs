@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+@font-face {
+    font-family: "digital";
+    src: url("ds_digital/DS-DIGI.TTF") format("truetype");
+}
+@font-face {
+    font-family: "digital7";
+    src: url("digital_7/digital-7.ttf") format("truetype");
+}
+@font-face {
+    font-family: "alien";
+    src: url("alien_encounters/Alien-Encounters-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "led";
+    src: url("the_led_display_st/The Led Display St.ttf") format("truetype");
+}
+@font-face {
+    font-family: "calculator";
+    src: url("Calculator.ttf") format("truetype");
+}
+@font-face {
+    font-family: "pixel";
+    src: url("LLPIXEL3.ttf") format("truetype");
+}
+body{
+    @apply  flex flex-col justify-center h-screen bg-gradient-to-r from-teal-950 via-blue-900 to-blue-950 text-green-400;
+    font-family: 'calculator';
+}
+.timer{
+    @apply text-9xl m-auto w-fit 
+}
+.button{
+    @apply text-2xl m-auto w-fit 
+}
+.horloge{
+    @apply w-full 
+}
+#millisecond1, #millisecond2{
+    @apply text-2xl
+}
+.barre{
+    @apply h-5 bg-gradient-to-r from-green-500 via-yellow-500 to-blue-500 text-black text-center min-w-fit rounded-lg justify-center flex items-center mt-1 ease-in delay-500
+}
+.boiteBarre{
+    @apply flex w-full flex-col items-center
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<div class="horloge">
+    <div class="ora">
+        <div class="timer">
+            <span id="heure1">00</span>:<span id="minute1">00</span>:<span id="seconde1">00</span> <span id="millisecond1"></span>
+        </div>
+    </div>
+    <div class="timer">
+        <span id="heure">00</span>:<span id="minute">00</span>:<span id="seconde">00</span> <span id="millisecond2"></span>
+    </div>
+    <div class="button">
+        <button onclick="reset()">reset</button>
+        <button onclick="start()">start</button>
+        <button onclick="stop()">stop</button>
+    </div>
+    <div class="boiteBarre">
+        <div class="barre" id="barreSecond"></div>
+        <div class="barre" id="barreMinute"></div>
+        <div class="barre" id="barreHeure"></div>
+        <div class="barre" id="barreSecond1"></div>
+        
+        <div class="barre" id="barreMinute1"></div>
+        
+        <div class="barre" id="barreHeure1"></div>
+    </div>
+</div>
+
+<body>
+    <script src="script.js"></script>
+</body>
+
+</html>
